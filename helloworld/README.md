@@ -14,7 +14,7 @@
 3. send some data to child for it to show
 4. useState & useEffect
 5. slider - create folder and component+helper child component, install react-slideshow-image, array with images OR use another library fro GitHub :0
-6. MongoDB database username: tanya, password: Molubirl_01, load sample dataset
+6. MongoDB database username: tanya, password: <standard>, load sample dataset
 
 18/2/23
 1. connect mongoDB cloud and compass
