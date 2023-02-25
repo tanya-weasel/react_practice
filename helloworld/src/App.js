@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Flowers from './components/Flowers';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import SendObj from './components/SendObj';
+import UseEffectUseState from './components/UseEffectUseState';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Flowers />} />
+          <Route path="/passingobjects" element={<SendObj />} />
+          <Route path="/inputoutput" element={<UseEffectUseState />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
